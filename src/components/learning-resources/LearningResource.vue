@@ -1,17 +1,17 @@
 <template>
   <li>
-    <div>
+    <BaseCard>
       <header>
         <h3>{{ title }}</h3>
         <button>Delete</button>
       </header>
-    </div>
 
-    <p>{{ description }}</p>
+      <p>{{ description }}</p>
 
-    <nav>
-      <a :href="link">View resorce</a>
-    </nav>
+      <nav>
+        <a :href="link">View resorce</a>
+      </nav>
+    </BaseCard>
   </li>
 </template>
 
@@ -20,6 +20,9 @@ export default {
   props: ['title', 'description', 'link'],
 };
 </script>
+
+
+
 
 <style scoped>
 li {
